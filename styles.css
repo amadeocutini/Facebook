@@ -1,0 +1,389 @@
+:root {
+    --texto: rgba(255,255,255, .7);
+    --blanco: #fff;
+    --input: #3A3B3C;
+    --input-hover: #4b4d4e;
+    --activo: #2D88FF;
+    --gris-claro: #B0B3B8;
+    --fondo-contenido: #242526;
+    --bs-primary: #2D88FF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #18191A;
+    color: var(--texto);
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/* HEADER */
+
+header {
+	background: var(--fondo-contenido);
+}
+
+header .logo {
+	display: inline-block;
+}
+
+header .logo svg {
+	height: 35px;
+	width: 35px;
+}
+
+header .barra-busqueda {
+	position: relative;
+	width: 100%;
+}
+
+header .barra-busqueda input {
+	width: 100%;
+	border: none;
+	background: var(--input);
+	color: var(--texto);
+	height: 40px;
+	border-radius: 100px;
+	padding: 0 20px 0 40px;
+}
+
+header .barra-busqueda .icono {
+	position: absolute;
+	top: 6px;
+	left: 15px;
+	color: var(--texto);
+}
+
+/* MENÚ */
+
+header .menu a {
+    display: inline-block;
+    color: var(--texto);
+    
+}
+
+header .menu a:hover {
+    background-color: var(--input);
+    border-radius: 5px;
+} 
+
+header .menu .active {
+    border-bottom: 4px solid var(--activo);
+    color: var(--activo);
+}
+
+header .menu .active:hover {
+    background-color: var(--fondo-contenido);
+    border-radius: 0 !important;
+}
+
+/* PERFIL Y BOTONES */
+
+.perfil {
+    color: var(--blanco);
+    padding: 7px;
+    padding-right: 1px !important;
+}
+
+.perfil img {
+    width: 35px;
+	height: 35px;
+	border-radius: 100px;
+    margin-bottom: 10px;
+}
+
+header .botones {
+    color: var(--texto);
+	background-color: var(--input);
+	display: inline-flex;
+	border-radius: 100px;
+	min-width: 40px;
+	height: 40px;
+	align-items: center;
+	justify-content: center;
+}
+
+.botones:hover {
+    background-color: var(--input-hover);
+}
+
+/* Aside */
+
+aside {
+	height: 100vh;
+	overflow: auto;
+	padding-top: 60px !important;
+}
+
+/* Enlaces Rápidos */
+
+.enlaces-rapidos > nav a {
+	display: flex;
+	align-items: center;
+	color: var(--blanco);
+	padding: 10px 10px;
+	border-radius: 3px;
+}
+
+.enlaces-rapidos > nav a:hover {
+	background: var(--input-hover);
+}
+
+.enlaces-rapidos img {
+	width: 30px;
+	height: 30px;
+	border-radius: 100px;
+}
+
+.enlaces-rapidos .icono {
+	margin-right: 20px;
+}
+
+.enlaces-rapidos .icono svg {
+	height: 27px;
+	width: 27px;
+}
+
+.navFooter a {
+    color: var(--texto);
+    font-size: 13px;
+}
+
+.navFooter a:hover {
+    text-decoration: underline !important;
+}
+
+/* CONTACTOS */
+
+.contactos .seccion {
+    margin-bottom: 20px;
+}
+
+.contactos .titulo {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--gris-claro);
+    margin-bottom: 10px;
+}
+
+.contactos .publicidad {
+    display: block;
+    max-height: 100px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border-radius: 5px
+}
+
+.contactos .publicidad img {
+    width: 100%;
+}
+
+.contactos .perfil {
+    padding: 5px;
+}
+
+.contactos img {
+    margin-right: 10px !important;
+}
+
+.contactos nav a {
+    display: flex;
+    align-items: center;
+    color: var(--blanco);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.contactos nav a:hover {
+    background: var(--input-hover);
+}
+
+/* MAIN */
+
+main .publicar, main .publicacion {
+    background-color: var(--fondo-contenido);
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.formulario {
+    display: flex;
+    justify-self: start;
+}
+
+.foto img {
+    height: 40px;
+}
+
+.formulario input {
+    width: 100%;
+    border: none;
+    background: var(--input);
+    color: var(--texto);
+    height: 40px;
+    border-radius: 100px;
+    padding-left: 15px;
+    margin-top: 1px;
+}
+
+main .publicar .estados a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    color: var(--texto);
+}
+
+.estados svg {
+    margin-right: 7px;
+}
+
+.publicar .estados a:hover {
+    color: var(--texto);
+    background-color: var(--input-hover);
+}
+
+/* PUBLICACIÓN */
+
+.publicacion .header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.datos {
+    display: flex;
+    flex-direction: column;
+}
+
+.nombre, .publicacion .body p {
+    color: var(--blanco);
+}
+
+.hora {
+    font-size: 13px;
+    color: var(--gris-claro);
+}
+
+.nombre:hover, .hora:hover, .comentarios:hover {
+    color: var(--gris-claro);
+    text-decoration: underline !important;
+}
+
+.publicacion .body p {
+    margin-bottom: 8px;
+}
+
+.publicacion img {
+    width: 100%;
+}
+
+.me-gusta svg {
+    margin-right: 10px;
+    color: #e75151;
+}
+
+.comentarios {
+    padding: 10px;
+    color: var(--gris-claro);
+}
+
+.opciones button {
+    width: 100%;
+    border: none;
+    background: none;
+    color: var(--texto) ;
+    padding: 10px;
+    border-radius : 3px;
+}
+
+.opciones button:hover {
+    background-color: var(--input-hover);
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width:453px) {
+	header .menu a {
+    padding: 10px 25px;
+  }
+}
+
+@media screen and (max-width:539px) {
+	header .menu a {
+    padding: 10px 20px !important;
+  }
+}
+
+@media screen and (max-width:479px) {
+	header .menu a {
+    padding: 10px 15px !important;
+  }
+}
+
+@media screen and (max-width:419px) {
+	header .menu a {
+    padding: 10px 10px !important;
+  }
+}
+
+@media screen and (max-width:359px) {
+	header .menu a {
+    padding: 10px 6px !important;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+    main {
+        padding-top: 85px;
+    }
+}
+
+@media screen and (max-width: 1399px) {
+    main {
+        padding-top: 130px;
+    }
+
+    aside .seccion {
+        padding-top: 50px;
+    }
+
+    aside nav {
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    main {
+        padding-top: 80px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    aside nav {
+        padding-top: 1px !important;
+    }
+}
+
+@media screen and (min-width: 557px) {
+    .botones {
+        margin-left: 7px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    input {
+        font-size: 14px;
+    }
+}
